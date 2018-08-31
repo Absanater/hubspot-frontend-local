@@ -82,3 +82,7 @@ Feel free to contribute and improve this project. Hoping in the future we can ha
  - Editing of html pages and modules
  - Multiple CSS / JS files
  - Workaround for "combined.css"
+ 
+ ## Contributors
+ Big thanks to everyone who has made contributions to the project.
+ [Daniel Ord](https://github.com/danord24)
