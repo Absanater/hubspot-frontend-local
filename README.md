@@ -13,7 +13,8 @@ This project includes:
 
 ## Getting setup
 To get started first we need to checkout this project and run
-
+  
+    git clone https://github.com/Absanater/hubspot-frontend-local your-project-name
     npm install
 
 Next we need to decide what we are going to be using the application for. There is Development on local, deployment to hubspot file manager or both. In the main directory there should be a file called **config.json**
