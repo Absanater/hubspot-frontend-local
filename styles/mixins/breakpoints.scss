@@ -1,0 +1,32 @@
+// Mixin to generate a default 'min-width' media query for the supplied
+// breakpoint, and defaults to a media type of 'screen'
+// Arguments are...
+//	- $size: The required viewport width at which this media query is activated
+//	- $media: Optional argument specifying an additional 'media type'
+//	  This additional media type will be added as an 'or' parameter to the media
+//	  query, and won't have any additional conditions applied
+//  - $mediaFeature: Optional argument specifying its 'media feature'
+//    For example min-width or max-width.
+@mixin bp($size, $media:"", $mediaFeature:'min-width'){
+  // If the 'media' argument has a value, then construct a media query
+  // including the supplied media type
+  @if $media != "" {
+    @media screen and ($mediaFeature: $size), #{$media} {
+      @content;
+    }
+  }
+
+  @if $mediaFeature == "max-width" {
+    @media screen and ($mediaFeature: $size - 1) {
+      @content;
+    }
+  }
+
+    // Else, no additional media type supplied, so generate the basic 'screen'
+    // only query
+  @else {
+    @media screen and ($mediaFeature: $size) {
+      @content;
+    }
+  }
+}

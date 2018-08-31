@@ -1,0 +1,17 @@
+{
+	"api_key": "YOUR_HUBSPOT_API_KEY",
+	"files": {
+		"css": {
+			"path": "/dist/main.css",
+			"useLocal": true,
+			"overWriteLocal": true,
+			"id": 'YOUR_FILE_ID'
+		},
+		"js": {
+			"path": "/dist/main.js",
+			"useLocal": true,
+			"overWriteLocal": true,
+			"id": 'YOUR_FILE_ID'
+		}
+	}
+}
