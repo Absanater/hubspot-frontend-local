@@ -1,7 +1,7 @@
 {
-  "name": "Hubspot local",
+  "name": "HubspotBrowserSyncWithTheme",
   "version": "1.0.0",
-  "description": "This project was designed to help developers worry less about coding css and javascript and testing on hubspot and focus more on the stuff we enjoy!",
+  "description": "HubSpot site CSS and JS testing in your browser, with optional theme inclusion and module compiler",
   "main": "index.html",
   "scripts": {
     "start": "gulp",
@@ -15,6 +15,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
     "gulp-header-comment": "^0.4.0",
+    "gulp-tap": "^2.0.0",
+    "path.join": "^1.0.0",
     "request": "^2.87.0"
   },
   "devDependencies": {
@@ -31,10 +33,12 @@
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-path": "^4.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sass-lint": "^1.3.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "3.0.7",
+    "gulp-watch": "^5.0.1",
     "object-keys": "^1.0.12",
     "optipng": "^1.1.0",
     "readline-sync": "^1.4.9",
